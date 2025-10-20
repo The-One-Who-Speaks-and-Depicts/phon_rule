@@ -45,11 +45,11 @@ Each element of the rule can be composed of the following:
 
 	- $[\int]$
 
-- `\features{\f{+}{stop} \f{+}{alv.}}`, a feature matrix, where each `\f{+/-}{name}` is a feature
+- `\features{\feature{+}{stop} \feature{+}{alv.}}`, a feature matrix, where each `\feature{+/-}{name}` is a feature
 
 	- ![](http://quicklatex.com/cache3/ql_99daf3ac81513b700e089296a4bcbe14_l3.png)
 
-- `\cvfeatures{C}{\f{\alpha}{place}}`: as above, but with a CV-tier element above the feature matrix
+- `\cvfeatures{C}{\feature{\alpha}{place}}`: as above, but with a CV-tier element above the feature matrix
 
 	- ![](http://quicklatex.com/cache3/ql_a92d92e8bad5303ca0d5719ae9896a91_l3.png)
 
@@ -67,4 +67,4 @@ Each element of the rule can be composed of the following:
 
 ### Examples
 
-Examples of phonological rules are found in the body of `phon_rule.tex`, and their output can be seen in `phon_rule.pdf`.
+Examples of phonological rules are found in the body of `phon_rule.tex`, and their output (with code above) can be seen in `phon_rule.pdf`.

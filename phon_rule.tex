@@ -1,5 +1,6 @@
 \documentclass[11pt]{article}
 \usepackage[center]{phon_rule}
+\usepackage{verbatim}
 
 \begin{document}
 
@@ -9,19 +10,42 @@
 
 \item English Intervocalic Alveolar Flapping:
 
+\begin{verbatim}
+  
+  \begin{phon_rule}
+  \cvfeatures{C}{\feature{+}{stop} \feature{+}{alv.}} \> \phone{R} \/ 
+  \cvfeatures{V}{\feature{+}{stress}} \_ \cvfeatures{V}{\feature{-}{stress}}
+  \end{phon_rule}
+    
+\end{verbatim}
+
 \begin{phon_rule}
-\cvfeatures{C}{\f{+}{stop} \f{+}{alv.}} \> \phone{R} \/ 
-\cvfeatures{V}{\f{+}{stress}} \_ \cvfeatures{V}{\f{-}{stress}}
+\cvfeatures{C}{\feature{+}{stop} \feature{+}{alv.}} \> \phone{R} \/ 
+\cvfeatures{V}{\feature{+}{stress}} \_ \cvfeatures{V}{\feature{-}{stress}}
 \end{phon_rule}
 
 \item English Vowel Nasalization:
 
+\begin{verbatim}
+  
+  \begin{phon_rule}
+  \cv{V} \> \features{\feature{+}{nasal}} \/ 
+  \_ \features{\feature{+}{nasal}} \cv{(C)} \#
+  \end{phon_rule}
+    
+\end{verbatim}
+
 \begin{phon_rule}
-\cv{V} \> \features{\f{+}{nasal}} \/ 
-\_ \features{\f{+}{nasal}} \cv{(C)} \#
+\cv{V} \> \features{\feature{+}{nasal}} \/ 
+\_ \features{\feature{+}{nasal}} \cv{(C)} \#
 \end{phon_rule}
 
 \item Yoruba Tone Falling:
+
+\begin{verbatim}
+  \cv{L} \> \cv{F} \/
+  \cv{H} \_
+\end{verbatim}
 
 \begin{phon_rule}
 \cv{L} \> \cv{F} \/
@@ -30,22 +54,43 @@
 
 \item English \ipa{@} Insertion:
 
+\begin{verbatim}
+  \begin{phon_rule}
+  \null \> \phone{@} \/
+  \features{\feature{+}{sib.}} \_ \features{\feature{+}{sib.}} \#
+  \end{phon_rule}
+\end{verbatim}
+
 \begin{phon_rule}
 \null \> \phone{@} \/
-\features{\f{+}{sib.}} \_ \features{\f{+}{sib.}} \#
+\features{\feature{+}{sib.}} \_ \features{\feature{+}{sib.}} \#
 \end{phon_rule}
 
 \item English Nasal Place Assimilation:
 
+\begin{verbatim}
+  \begin{phon_rule}
+  \cv{N} \> \features{\feature{\alpha}{place}} \/
+  \_ \cvfeatures{C}{\feature{\alpha}{place}}
+  \end{phon_rule}
+\end{verbatim}
+
 \begin{phon_rule}
-\cv{N} \> \features{\f{\alpha}{place}} \/
-\_ \cvfeatures{C}{\f{\alpha}{place}}
+\cv{N} \> \features{\feature{\alpha}{place}} \/
+\_ \cvfeatures{C}{\feature{\alpha}{place}}
 \end{phon_rule}
 
 \item Turkish Sonorant Devoicing:
 
+\begin{verbatim}
+  \begin{phon_rule}
+  \features{\feature{-}{sonorant}} \> \features{\feature{-}{voice}} \/
+  \_ \oneof{\# \\ \cv{C}}
+  \end{phon_rule}
+\end{verbatim}
+
 \begin{phon_rule}
-\features{\f{-}{sonorant}} \> \features{\f{-}{voice}} \/
+\features{\feature{-}{sonorant}} \> \features{\feature{-}{voice}} \/
 \_ \oneof{\# \\ \cv{C}}
 \end{phon_rule}
 

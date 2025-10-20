@@ -55,11 +55,11 @@ Each element of the rule can be composed of the following:
 	- ![[\int]](readme-images/sh-phone.png)
 
 
-- `\features{\f{+}{stop} \f{+}{alv.}}`, a feature matrix, where each `\f{+/-}{name}` is a feature
+- `\features{\feature{+}{stop} \feature{+}{alv.}}`, a feature matrix, where each `\feature{+/-}{name}` is a feature
 
 	- ![](readme-images/features.png)
 
-- `\cvfeatures{C}{\f{\alpha}{place}}`: as above, but with a CV-tier element above the feature matrix
+- `\cvfeatures{C}{\feature{\alpha}{place}}`: as above, but with a CV-tier element above the feature matrix
 
 	- ![](readme-images/cfeatures.png)
 
@@ -87,4 +87,4 @@ Invoking the `center` option when using the package wraps the rules (the `phon_r
 
 ### 4\. Examples
 
-Examples of phonological rules are found in the body of `phon_rule.tex`, and their output can be seen in `phon_rule.pdf`.
+Examples of phonological rules are found in the body of `phon_rule.tex`, and their output (with code above) can be seen in `phon_rule.pdf`.
